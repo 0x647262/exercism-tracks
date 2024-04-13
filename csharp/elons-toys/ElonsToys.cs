@@ -11,8 +11,9 @@ class RemoteControlCar
 
     public string BatteryDisplay()
     {
-        if (_chargeRemaining == 0) {
-        return "Battery empty";
+        if (_chargeRemaining == 0)
+        {
+            return "Battery empty";
         }
 
         return $"Battery at {_chargeRemaining}%";
@@ -20,7 +21,8 @@ class RemoteControlCar
 
     public void Drive()
     {
-        if (_chargeRemaining == 0) {
+        if (_chargeRemaining == 0)
+        {
             return;
         }
 

@@ -22,7 +22,8 @@ class BirdCount
     public int CountForFirstDays(int numberOfDays)
     {
         int count = 0;
-        for (int i = 0; i < numberOfDays; i += 1) {
+        for (int i = 0; i < numberOfDays; i += 1)
+        {
             count += this.birdsPerDay[i];
         }
 

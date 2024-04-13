@@ -3,6 +3,7 @@ package weather
 
 // CurrentCondition current weather condition.
 var CurrentCondition string
+
 // CurrentLocation current location in Goblinocus.
 var CurrentLocation string
 

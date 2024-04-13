@@ -24,6 +24,6 @@ class Lasagna
 
     public function alarm(): string
     {
-        return "Ding!";
+        return 'Ding!';
     }
 }

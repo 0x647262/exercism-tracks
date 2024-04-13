@@ -23,9 +23,11 @@ defmodule BirdCount do
 
   def has_day_without_birds?(list) do
     [head | tail] = list
+
     cond do
       head > 0 ->
         has_day_without_birds?(tail)
+
       :default ->
         true
     end
@@ -46,9 +48,11 @@ defmodule BirdCount do
 
   def busy_days(list) do
     [head | tail] = list
+
     cond do
       head >= 5 ->
         1 + busy_days(tail)
+
       :default ->
         busy_days(tail)
     end

@@ -16,9 +16,9 @@ def value_of_card(card):
     3.  '2' - '10' = numerical value.
     """
 
-    if card in ['J', 'Q', 'K']:
+    if card in ["J", "Q", "K"]:
         return 10
-    if card == 'A':
+    if card == "A":
         return 1
     return int(card)
 
@@ -40,6 +40,7 @@ def higher_card(card_one, card_two):
         return card_two
     return card_one, card_two
 
+
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.
 
@@ -51,9 +52,9 @@ def value_of_ace(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    if card_one == 'A':
+    if card_one == "A":
         card_one = 11
-    if card_two == 'A':
+    if card_two == "A":
         card_two = 11
     return 1 if value_of_card(card_one) + value_of_card(card_two) > 11 else 11
 
@@ -69,9 +70,9 @@ def is_blackjack(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    if card_one == 'A':
+    if card_one == "A":
         card_one = 11
-    if card_two == 'A':
+    if card_two == "A":
         card_two = 11
     return value_of_card(card_one) + value_of_card(card_two) == 21
 
@@ -84,6 +85,7 @@ def can_split_pairs(card_one, card_two):
     """
 
     return value_of_card(card_one) == value_of_card(card_two)
+
 
 def can_double_down(card_one, card_two):
     """Determine if a blackjack player can place a double down bet.

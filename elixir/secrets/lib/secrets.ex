@@ -19,7 +19,7 @@ defmodule Secrets do
 
   def secret_divide(secret) do
     fn param ->
-      param / secret
+      (param / secret)
       |> trunc
     end
   end

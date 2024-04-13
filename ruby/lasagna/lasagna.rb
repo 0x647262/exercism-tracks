@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Lasagna
   EXPECTED_MINUTES_IN_OVEN = 40
   MINUTES_PER_LAYER = 2

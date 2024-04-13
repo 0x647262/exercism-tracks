@@ -26,7 +26,12 @@ def make_word_groups(vocab_words):
     produces the following string: 'en :: enclose :: enjoy :: enlighten'.
     """
 
-    return " :: ".join([f"{vocab_words[0]}{word}" if word is not vocab_words[0] else word for word in vocab_words])
+    return " :: ".join(
+        [
+            f"{vocab_words[0]}{word}" if word is not vocab_words[0] else word
+            for word in vocab_words
+        ]
+    )
 
 
 def remove_suffix_ness(word):

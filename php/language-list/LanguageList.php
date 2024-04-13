@@ -8,6 +8,7 @@ function language_list(...$languages): array
 function add_to_language_list(array $language_list, string $language): array
 {
     array_push($language_list, $language);
+
     return $language_list;
 }
 
@@ -23,5 +24,5 @@ function current_language(array $language_list)
 
 function language_list_length(array $language_list)
 {
-    return sizeof($language_list);
+    return count($language_list);
 }
