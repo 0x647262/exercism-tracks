@@ -1,6 +1,6 @@
 <?php
 
-function helloWorld()
+function helloWorld(): string
 {
-    return 'Goodbye, Mars!';
+    return 'Hello, World!';
 }
