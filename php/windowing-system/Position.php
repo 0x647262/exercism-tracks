@@ -2,11 +2,11 @@
 
 class Position
 {
-    public $x;
+    public int $x;
 
-    public $y;
+    public int $y;
 
-    public function __construct($y, $x)
+    public function __construct(int $y, int $x)
     {
         $this->x = $x;
         $this->y = $y;

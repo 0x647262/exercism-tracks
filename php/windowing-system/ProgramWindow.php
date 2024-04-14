@@ -1,14 +1,17 @@
 <?php
 
+require_once 'Size.php';
+require_once 'Position.php';
+
 class ProgramWindow
 {
-    public $x;
+    public int $x;
 
-    public $y;
+    public int $y;
 
-    public $height;
+    public int $height;
 
-    public $width;
+    public int $width;
 
     public function __construct()
     {
@@ -18,13 +21,13 @@ class ProgramWindow
         $this->width = 800;
     }
 
-    public function resize($size)
+    public function resize(Size $size): void
     {
         $this->height = $size->height;
         $this->width = $size->width;
     }
 
-    public function move($position)
+    public function move(Position $position): void
     {
         $this->x = $position->x;
         $this->y = $position->y;

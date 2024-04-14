@@ -2,11 +2,11 @@
 
 class Size
 {
-    public $height;
+    public int $height;
 
-    public $width;
+    public int $width;
 
-    public function __construct($height, $width)
+    public function __construct(int $height, int $width)
     {
         $this->height = $height;
         $this->width = $width;
