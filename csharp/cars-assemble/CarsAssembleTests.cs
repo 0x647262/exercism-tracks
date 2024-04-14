@@ -7,44 +7,44 @@ public class CarsAssembleTests
     [Task(1)]
     public void Success_rate_for_speed_zero()
     {
-        Assert.Equal(0.0, AssemblyLine.SuccessRate(0), precision:1);
+        Assert.Equal(0.0, AssemblyLine.SuccessRate(0), precision: 1);
     }
-    
+
     [Fact]
     [Task(1)]
     public void Success_rate_for_speed_one()
     {
-        Assert.Equal(1.0, AssemblyLine.SuccessRate(1), precision:1);
+        Assert.Equal(1.0, AssemblyLine.SuccessRate(1), precision: 1);
     }
-    
+
     [Fact]
     [Task(1)]
     public void Success_rate_for_speed_four()
     {
-        Assert.Equal(1.0, AssemblyLine.SuccessRate(4), precision:1);
+        Assert.Equal(1.0, AssemblyLine.SuccessRate(4), precision: 1);
     }
-    
+
     [Fact]
     [Task(1)]
     public void Success_rate_for_speed_five()
     {
-        Assert.Equal(0.9, AssemblyLine.SuccessRate(5), precision:1);
+        Assert.Equal(0.9, AssemblyLine.SuccessRate(5), precision: 1);
     }
-    
+
     [Fact]
     [Task(1)]
     public void Success_rate_for_speed_nine()
     {
-        Assert.Equal(0.8, AssemblyLine.SuccessRate(9), precision:1);
+        Assert.Equal(0.8, AssemblyLine.SuccessRate(9), precision: 1);
     }
-    
+
     [Fact]
     [Task(1)]
     public void Success_rate_for_speed_ten()
     {
-        Assert.Equal(0.77, AssemblyLine.SuccessRate(10), precision:2);
+        Assert.Equal(0.77, AssemblyLine.SuccessRate(10), precision: 2);
     }
-    
+
     [Fact]
     [Task(2)]
     public void Production_rate_per_hour_for_speed_zero()
