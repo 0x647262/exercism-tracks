@@ -9,7 +9,7 @@ class PizzaPi
 
     public function calculateSauceRequirement(int $pizzas, int $sauce_can_volume): int
     {
-        return $pizzas * 125 / $sauce_can_volume;
+        return intdiv($pizzas * 125, $sauce_can_volume);
     }
 
     public function calculateCheeseCubeCoverage(int $dimension, float $thickness, int $diameter): int

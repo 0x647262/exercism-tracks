@@ -10,9 +10,9 @@ RUN                                                \
     zip                                            \
   && rm -rf /var/lib/apt/lists/*
 
-RUN                       \
-  pecl install xdebug zip \
-  && docker-php-ext-enable xdebug zip
+RUN                               \
+  pecl install opcache xdebug zip \
+  && docker-php-ext-enable opcache xdebug zip
 
 RUN useradd --create-home php
 USER php
