@@ -1,3 +1,0 @@
-#! /usr/bin/env bash
-
-docker run -v "$PWD:/tmp/project" php-exercism:latest test "${@}"

@@ -1,5 +1,0 @@
-#! /usr/bin/env bash
-
-# shellcheck disable=SC2046
-/opt/composer/vendor/bin/phpstan \
-  analyze --level 9 $(find . -path ./vendor -prune -o -name "*.php" -not -name "*Test.php" -print)
