@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
+# AssemblyLine class:
 class AssemblyLine
   CARS_PER_HOUR = 221
 
+  # rubocop:disable Metrics/MethodLength
   def initialize(speed)
+    # rubocop:enable Metrics/MethodLength
     @speed = speed
     @success_rate = case @speed
                     when 10

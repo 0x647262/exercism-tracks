@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Attendee class:
 class Attendee
   def initialize(height)
     @height = height
@@ -15,7 +16,7 @@ class Attendee
 
   # Do not edit above methods, add your own methods below.
 
-  def has_pass?
+  def pass?
     @pass_id != nil
   end
 
@@ -24,6 +25,6 @@ class Attendee
   end
 
   def allowed_to_ride?(ride_minimum_height)
-    has_pass? && fits_ride?(ride_minimum_height)
+    pass? && fits_ride?(ride_minimum_height)
   end
 end

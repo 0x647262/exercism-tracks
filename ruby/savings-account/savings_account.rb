@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# SavingsAccount module:
 module SavingsAccount
   def self.interest_rate(balance)
     if balance.negative?

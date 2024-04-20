@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# LogLineParsing class:
 class LogLineParser
   def initialize(line)
     @line = line

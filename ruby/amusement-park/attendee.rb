@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Attendee class:
 class Attendee
   def initialize(height)
     @height = height
