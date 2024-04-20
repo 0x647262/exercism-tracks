@@ -9,4 +9,6 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+.elixir-ls/
 .elixir_tools
+.elixir-tools
