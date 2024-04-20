@@ -3,11 +3,10 @@
 (defn interest-rate
   "Returns the interest rate based on the specified balance."
   [balance]
-  (cond
-    (>= balance 5000M) 2.475
-    (>= balance 1000M) 1.621
-    (>= balance 0M) 0.5
-    :else -3.213))
+  (cond (>= balance 5000M) 2.475
+        (>= balance 1000M) 1.621
+        (>= balance 0M) 0.5
+        :else -3.213))
 
 (defn annual-balance-update
   "Returns the annual balance update, taking into account the interest rate."
