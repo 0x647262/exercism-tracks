@@ -29,13 +29,13 @@ func Quantities(layers []string) (int, float64) {
 
 // AddSecretIngredient ...
 func AddSecretIngredient(theirLayers, myLayers []string) []string {
-	var secretIngredient = theirLayers[len(theirLayers)-1]
+	secretIngredient := theirLayers[len(theirLayers)-1]
 	return append(myLayers[:len(myLayers)-1], secretIngredient)
 }
 
 // ScaleRecipe ...
 func ScaleRecipe(quantities []float64, scalar int) []float64 {
-	var scaled = make([]float64, len(quantities))
+	scaled := make([]float64, len(quantities))
 	for idx, val := range quantities {
 		scaled[idx] = (val / 2.0) * float64(scalar)
 	}

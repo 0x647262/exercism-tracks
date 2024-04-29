@@ -1,7 +1,9 @@
 package logs
 
-import "strings"
-import "unicode/utf8"
+import (
+	"strings"
+	"unicode/utf8"
+)
 
 // Application identifies the application emitting the given log.
 func Application(log string) string {

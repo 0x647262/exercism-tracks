@@ -9,12 +9,12 @@ func WelcomeMessage(customer string) string {
 
 // AddBorder adds a border to a welcome message.
 func AddBorder(welcomeMsg string, numStarsPerLine int) string {
-	var stars = strings.Repeat("*", numStarsPerLine)
+	stars := strings.Repeat("*", numStarsPerLine)
 	return stars + "\n" + welcomeMsg + "\n" + stars
 }
 
 // CleanupMessage cleans up an old marketing message.
 func CleanupMessage(oldMsg string) string {
-	var noStars = strings.ReplaceAll(oldMsg, "*", "")
+	noStars := strings.ReplaceAll(oldMsg, "*", "")
 	return strings.TrimSpace(noStars)
 }
