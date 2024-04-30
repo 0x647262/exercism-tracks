@@ -1,9 +1,10 @@
 """Functions to automate Conda airlines ticketing system."""
 
 from itertools import count, cycle
+from typing import Iterable
 
 
-def generate_seat_letters(number):
+def generate_seat_letters(number: int) -> Iterable[str]:
     """Generate a series of letters for airline seats.
 
     :param number: int - total number of seat letters to be generated.
@@ -21,7 +22,7 @@ def generate_seat_letters(number):
         yield next(cycled)
 
 
-def generate_seats(number):
+def generate_seats(number: int) -> Iterable[str]:
     """Generate a series of identifiers for airline seats.
 
     :param number: int - total number of seats to be generated.
@@ -44,11 +45,13 @@ def generate_seats(number):
         yield f"{row}{letter}"
 
 
-def assign_seats(passengers):
+def assign_seats(passengers: list[str]) -> dict[str, str]:
     """Assign seats to passengers.
 
-    :param passengers: list[str] - a list of strings containing names of passengers.
-    :return: dict - with the names of the passengers as keys and seat numbers as values.
+    :param passengers: list[str] - a list of strings containing names of
+                                   passengers.
+    :return: dict - with the names of the passengers as keys and seat numbers
+                    as values.
 
     Example output: {"Adele": "1A", "Björk": "1B"}
 
@@ -57,7 +60,7 @@ def assign_seats(passengers):
     return dict(zip(passengers, generate_seats(len(passengers))))
 
 
-def generate_codes(seat_numbers, flight_id):
+def generate_codes(seat_numbers: list[str], flight_id: str) -> Iterable[str]:
     """Generate codes for a ticket.
 
     :param seat_numbers: list[str] - list of seat numbers.
