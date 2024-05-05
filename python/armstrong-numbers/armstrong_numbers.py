@@ -6,13 +6,28 @@
 """
 
 
+def evaluate(number: int, length: int) -> int:
+    """
+    Sums a number's cubes
+    """
+
+    # Base case:
+    if number // 10 == 0:
+        return number**length
+
+    # Recurse:
+    return (number % 10) ** length + evaluate(number // 10, length)
+
+
+def digits(number: int) -> int:
+    """
+    Returns the number of digits in a number
+    """
+    return len(str(number))
+
+
 def is_armstrong_number(number: int) -> bool:
     """
-    Calculate whether or not a number is an Armstrong number
+    Discern whether or not a number is an Armstrong (Narcissistic) number
     """
-    strnumber: str = str(number)
-    total: int = 0
-    for n in strnumber:
-        total += int(n) ** len(strnumber)
-
-    return number == total
+    return number == evaluate(number, digits(number))
