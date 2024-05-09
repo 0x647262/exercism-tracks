@@ -1,0 +1,8 @@
+[package]
+name = "aoc"
+version = "2017.12.1"
+authors = ["Dan Beste <dan.ray.beste@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+day-one = { path = "src/day-one/" }

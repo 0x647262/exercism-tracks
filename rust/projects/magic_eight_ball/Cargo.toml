@@ -1,0 +1,7 @@
+[package]
+name = "magic_eight_ball"
+version = "0.1.0"
+authors = ["Dan Beste <Dan.Ray.Beste@gmail.com>"]
+
+[dependencies]
+rand = "*"
