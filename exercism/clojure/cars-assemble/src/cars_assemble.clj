@@ -21,4 +21,5 @@
 (defn working-items
   "Calculates how many working cars are produced per minute"
   [speed]
-  (let [cars-per-hour (int (production-rate speed))] (quot cars-per-hour 60)))
+  (let [cars-per-hour (int (production-rate speed))]
+    (quot cars-per-hour 60)))

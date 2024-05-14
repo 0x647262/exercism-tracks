@@ -3,3 +3,5 @@
 .lsp
 target/
 .lein-failures
+.lein-repl-history
+.calva
