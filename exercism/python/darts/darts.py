@@ -2,6 +2,11 @@
 Darts
 
 https://mathworld.wolfram.com/Distance.html
+
+Interesting community solution:
+
+https://en.algorithmica.org/hpc/pipelining/branchless/
+https://exercism.org/tracks/python/exercises/darts/solutions/astrorips
 """
 
 def score(x: float, y: float) -> int:
