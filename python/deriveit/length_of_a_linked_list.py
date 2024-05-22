@@ -21,7 +21,7 @@ def list_length(head: ListNode) -> int:
     nodes: int = 0
     node: Optional[ListNode] = head
 
-    while node is not None:
+    while node:
         nodes += 1
         node = node.next
 
